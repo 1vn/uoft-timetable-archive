@@ -10,5 +10,5 @@ An archive of course timetable data for courses offered by the Faculty of Arts &
 4. The scraped data will appear in the output directory as `<epoch-time>.json` files, where `<epoch-time>` is the time it was scraped
 
 ## Notes on data contained in freeatnet/uoft-timetable-archive
-* The source of the data is polled daily at 9.14am
+* The source of the data is polled daily at 2.09pm
 * The data may or may not be updated daily by the source
