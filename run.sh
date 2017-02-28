@@ -6,7 +6,7 @@ SECTION='S,Y'
 
 git pull --rebase
 
-$scrape_file_name='$(date +%s).json'
+$scrape_file_name=$(date +%s).json
 
 curl --silent "https://timetable.iit.artsci.utoronto.ca/api/courses?org=&code=&section=${SECTION}&studyyear=&daytime=&weekday=&prof=&breadth=&online=&waitlist=&available=&title=" > $ACADEM_SESSION/$scrape_file_name 
 
