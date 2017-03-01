@@ -10,7 +10,7 @@ SCRAPENAME=$(date +%s).json
 
 curl --silent "https://timetable.iit.artsci.utoronto.ca/api/courses?org=&code=&section=${SECTION}&studyyear=&daytime=&weekday=&prof=&breadth=&online=&waitlist=&available=&title=" > $ACADEM_SESSION/$SCRAPENAME 
 
-cp $ACADEM_SESSION/$SCRAPENAME $ACADEM_SESSION/latest.json
+ln $ACADEM_SESSION/$SCRAPENAME $ACADEM_SESSION/latest.json
 
 git add "${ACADEM_SESSION}/"
 git commit -m "Add new scrape"
